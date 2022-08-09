@@ -1,4 +1,15 @@
-let notice = ' | [The Ads provided are from gogoanime, We are not related in this.]'
+//active episode system
+var header = document.getElementById("eps-no");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+//episode system
+let notice = ' | [Use Ads Blocker Extension for better experience]'
 function eps1(){
     document.getElementById('player').src = 'https://goload.io/streaming.php?id=MTY2NDQ4&title=Dororo+%28Dub%29+Episode+1';
     document.getElementById('epsno').innerHTML = 'Episode 1' + notice;
