@@ -107,3 +107,24 @@ function eps24(){
     document.getElementById('epsno').innerHTML = 'Episode 24' + notice;
 }
 
+//disqus
+
+    var disqus_config = function () {
+    this.page.url = index.html;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = 'dororo'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://animestic.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+
+//disqus_thread
+document.getElementById('disq').addEventListener('click', () => {
+    document.getElementById('disq').style.display = 'none';
+    document.getElementById('disqus_thread').style.display = 'block';
+})
+//disqus finish
+
