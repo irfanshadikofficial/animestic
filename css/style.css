@@ -53,6 +53,7 @@ body{
     background-color: transparent;
     border: none;
     font-size: 15px;
+    cursor: pointer;
 }
 .fa-magnifying-glass{
     color: white;
